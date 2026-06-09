@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio</title>
+    <style>
+        h1 {
+            display: block;
+            margin: 20px auto;
+            color:rgb(78, 48, 153);
+            font-weight: 16px;
+            padding: 10px 20px;
+            text-align: center;
+         }
+         h2 {
+            font-size: 25px;
+            color: #4b0ddd;
+            text-align: center;
+
+         }
+         h3 {
+            font-size: 15px;
+            color: #4d4366;
+        }
+
+
+         img {
+            display: block;
+            width: 100px;
+            margin: 30px auto; 
+            line-height: 20px;
+         }
+
+         #about p,
+         #projects p {
+            font-size: 13px;
+            line-height: 1.7;
+            font-family: "poppins", sans-serif;
+            font-weight: 400;
+         }
+       
+         button { 
+            display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: rgb(82, 19, 242);
+            color: #1f0606;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+          line-height: 22px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        }
+        
+        button:hover {
+        background: #fffbef;
+      color: #1a64d6;
+      cursor: pointer;
+      border: 1px solid #1a64d6;
+         }
+         
+         </style>
+  </head>
+  <body>
+    <h1>
+        My Profile
+    </h1>
+    <section id="introduction">
+    <h2>Hello, I am Caroline. A beginner web developer.</h2>
+    </section>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/178/546/original/Carol.jpg?1771577015"
+    alt="My profile"
+    width="100"
+    />
+    <section id="about">
+        
+        <P>
+        I am a motivated and enthusiastic coding beginner with a strong interest in web development. 
+        I am currently learning HTML, CSS and Javascript, and I am developing my skills by buiding
+        practical projects such as portfolio websites. My background in childcare and education has 
+        helped me develop patience, attention to detail, and problem-solving skills, which I apply to my coding
+        journey. I am excited to gain more experience and work on projects that wil strengthen my 
+        knowledge and prepare me for opportunities in web development.
+    </p> 
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Weather Report<h/h3>
+                <p>
+           The Weather Report Web Application is a beginner-friendly project that I developed using HTML, CSS and Javascript.
+           The application allows users to view weather conditions such as temperature, weather status and location. Through this project,
+           I practiced building structured web pages using HTML, designing responsive and visually appealing with CSS, 
+           and adding interactivity using Javascript. The project has helped me strengthen my understanding of we develoment fundamentals
+           and improved my confidence in creating functional and interactive websites. Follow up the project below!
+                </p>
+    <a href="homework-1.html" class="Weather-Report">
+          View Project
+        </a>  
+        </div>
+            </section>
+            <button>
+                Contact Me 
+            </button>
+
+            <p>Coded by Caroline Mafongoya</p>
+
+             <script>
+             
+             function ContactMe () {
+                let name = prompt("What is your name?");
+                
+                let h1 = document.querySelector("h1");
+                 h1.innerHTML = "Nice to meet you, " + name + " Welcome to my portfolio 😊";
+             }
+             
+             let contactButton = document.querySelector("button");
+             
+             contactButton.addEventListener("click", ContactMe);
+             
+             </script>
+            </body>
+            </html>
+
